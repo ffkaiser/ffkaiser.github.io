@@ -2,17 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Kaiser - Frontend Engineer</title>
-    <meta name="description" content="Hi I'm Felipe, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
+    <title>Hero Block with Video</title>
+    <meta name="description" content="A hero block with a background video that plays in a continuous loop and includes a tinted overlay.">   
+
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="preload" href="assets/img/myimg.png" as="image">
+    <!--Felipe Kaiser 77328-->
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXHT3PLQXB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZXHT3PLQXB');
+</script>
+
 </head>
 <body>
 
+        <!-- hero block -->
     <header>
-        <h1>Hi, I'm Mary Smith</h1>
-        <h2>Web / UI Designer</h2>
-    </header>
+        <div class="hero-text-container">
+            <h1 class="slide-in-top">Hi, I'm Mary Smith</h1>
+            <h2 class="slide-in-left">Web / UI Designer</h2>
+        </div>
+        <div class="hero-bg-media">
+            <video loop playsinline muted autoplay poster="assets/imgs/myimg.png" class="background-video" disablepictureinpicture preload="auto"> 
+                <source src="assets/videos/myvideo.mp4" type="video/mp4">
+            </video>       
+        </div>
+    
+</header>
+    <!-- /hero block -->
 
     <main>
         <section>
@@ -24,6 +49,8 @@
             <p><a href="exercises/page-3.html">Web Page with Sections</a></p>
             <p><a href="exercises/page-4.html">Vincent van Gogh</a></p> 
             <p><a href="exercises/page-5.html">Irish Tourism</a></p>
+            <p><a href="exercises/hero-video.html">Hero block with background video</a></p> 
+
         </section>
     </main>
     
