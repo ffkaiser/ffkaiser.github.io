@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Docs – TailwindCSS Layout Example</title> <!--Felipe Kaiser 77328-->
+  <meta name="description" content="A clean, responsive documentation layout built using TailwindCSS via CDN with a sidebar, main content area, and an Edit on GitHub button.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-900 bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-700">DevDocs</h1>
+      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        Edit on GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <div class="container mx-auto flex flex-col lg:flex-row px-6 py-10 gap-10">
+
+    <!-- Sidebar (Visible on lg+) -->
+    <aside class="lg:w-1/4 lg:sticky lg:top-24 space-y-4">
+      <nav class="bg-white p-6 rounded-lg shadow-sm lg:block hidden">
+        <h2 class="text-lg font-semibold mb-3 text-gray-800">Contents</h2>
+        <ul class="space-y-2">
+          <li><a href="#introduction" class="block text-gray-700 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">Introduction</a></li>
+          <li><a href="#installation" class="block text-gray-700 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">Installation</a></li>
+          <li><a href="#usage" class="block text-gray-700 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">Usage</a></li>
+          <li><a href="#components" class="block text-gray-700 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">Components</a></li>
+          <li><a href="#conclusion" class="block text-gray-700 hover:text-blue-700 focus:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1">Conclusion</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 max-w-prose mx-auto bg-white p-8 rounded-lg shadow-sm">
+      <h2 id="introduction" class="text-3xl font-bold mb-4 text-gray-800">Introduction</h2>
+      <p class="mb-6 text-gray-700 leading-relaxed">
+        Welcome to the Developer Docs! This guide provides an overview of how to build modern, responsive layouts using TailwindCSS. You’ll learn to structure pages efficiently and style components using utility classes.
+      </p>
+
+      <h2 id="installation" class="text-3xl font-bold mb-4 text-gray-800">Installation</h2>
+      <p class="mb-6 text-gray-700 leading-relaxed">
+        To get started, include TailwindCSS via CDN in your HTML <code class="bg-gray-100 px-1 py-0.5 rounded">head</code> section:
+      </p>
+      <pre class="bg-gray-100 p-4 rounded mb-6 overflow-x-auto text-sm"><code>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</code></pre>
+
+      <h2 id="usage" class="text-3xl font-bold mb-4 text-gray-800">Usage</h2>
+      <p class="mb-6 text-gray-700 leading-relaxed">
+        You can begin using Tailwind utility classes directly in your HTML elements. Each class controls a small piece of styling, making it easy to build and maintain UI components with precision and consistency.
+      </p>
+
+      <h2 id="components" class="text-3xl font-bold mb-4 text-gray-800">Components</h2>
+      <p class="mb-6 text-gray-700 leading-relaxed">
+        Tailwind provides composable classes that allow developers to rapidly design elements such as buttons, forms, cards, and navigation bars. Combine classes like <code class="bg-gray-100 px-1 py-0.5 rounded">bg-blue-600</code> and <code class="bg-gray-100 px-1 py-0.5 rounded">hover:bg-blue-700</code> to add interactivity and style.
+      </p>
+
+      <h2 id="conclusion" class="text-3xl font-bold mb-4 text-gray-800">Conclusion</h2>
+      <p class="text-gray-700 leading-relaxed">
+        With TailwindCSS, you can rapidly build beautiful, responsive layouts without writing custom CSS. Experiment, refine, and deploy faster than ever before — your documentation can look great with minimal effort.
+      </p>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 mt-10">
+    <div class="container mx-auto text-center text-gray-600 text-sm">
+      © 2025 DevDocs. Built with ❤️ using TailwindCSS.
+    </div>
+  </footer>
+
+</body>
+</html>
